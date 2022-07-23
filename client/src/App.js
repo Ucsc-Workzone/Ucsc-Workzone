@@ -29,7 +29,7 @@ class App extends Component {
             <Route exact path="/404" name="Page 404" element={<Page404 />} />
             <Route exact path="/500" name="Page 500" element={<Page500 />} />
             {/* <Route path="*" name="Landing" element={<Landing />} /> */}
-            <Route path="*" name="Home" element={<DefaultLayout />} />
+            <Route exact path="*" name="Home" element={<DefaultLayout />} />
           </Routes>
         </Suspense>
       </HashRouter>
