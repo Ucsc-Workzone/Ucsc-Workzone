@@ -1,0 +1,7 @@
+.memberContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}

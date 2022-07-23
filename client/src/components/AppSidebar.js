@@ -8,9 +8,10 @@ import { AppSidebarNav } from './AppSidebarNav'
 
 import { logoNegative } from 'src/assets/brand/logo-negative'
 import { sygnet } from 'src/assets/brand/sygnet'
-
+import { CImage } from '@coreui/react'
 import SimpleBar from 'simplebar-react'
 import 'simplebar/dist/simplebar.min.css'
+import Logo from 'src/assets/images/logo.png';
 
 // sidebar nav config
 import navigation from '../_nav'
@@ -31,8 +32,11 @@ const AppSidebar = () => {
       }}
     >
       <CSidebarBrand className="d-none d-md-flex" to="/">
-        <CIcon className="sidebar-brand-full" icon={logoNegative} height={35} />
-        <CIcon className="sidebar-brand-narrow" icon={sygnet} height={35} />
+      
+        {/* <CIcon className="sidebar-brand-full" icon={logoNegative} height={35} />
+        <CIcon className="sidebar-brand-narrow" icon={sygnet} height={35} /> */}
+        {/* <img height={35} src={Logo} alt="slide 1" /> */}
+        <h4>UCSC_WorkZone</h4>
       </CSidebarBrand>
       <CSidebarNav>
         <SimpleBar>
