@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 import {
   CButton,
   CCard,
@@ -65,9 +66,10 @@ const Login = () => {
                     <CRow>
                       <CCol xs={6}>
                         <Link to='#'>
-                        <CButton color="primary" className="px-4" onClick={handleLogin}>
+                        {/* <CButton color="primary" className="px-4" onClick={handleLogin}>
                           Login
-                        </CButton>
+                        </CButton> */}
+                        <Link to="/home">login</Link>
                         </Link>
                        
                       </CCol>

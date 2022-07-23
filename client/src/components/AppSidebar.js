@@ -20,6 +20,7 @@ const AppSidebar = () => {
   const dispatch = useDispatch()
   const unfoldable = useSelector((state) => state.sidebarUnfoldable)
   const sidebarShow = useSelector((state) => state.sidebarShow)
+  const user="admin"
 
   return (
     <CSidebar className="bg-primary"
@@ -40,7 +41,9 @@ const AppSidebar = () => {
       </CSidebarBrand>
       <CSidebarNav>
         <SimpleBar>
-          <AppSidebarNav items={navigation} />
+       {user=true &&  <AppSidebarNav items={navigation} />
+
+       }
         </SimpleBar>
       </CSidebarNav>
       <CSidebarToggler
