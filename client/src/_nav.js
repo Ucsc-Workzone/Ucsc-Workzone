@@ -18,28 +18,31 @@ import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 const _nav = [
   {
     component: CNavItem,
-    name: 'Dashboard',
-    to: '/dashboard/*',
+    name: 'Home',
+    to: '/dashboard',
     icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
-    badge: {
-      color: 'info',
-      text: 'NEW',
-    },
-  },
-  {
-    component: CNavTitle,
-    name: 'Theme',
   },
   {
     component: CNavItem,
-    name: 'Colors',
-    to: '/theme/colors',
+    name: 'Dashboard',
+    to: '/landing',
+    icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
+   
+  },
+  // {
+  //   component: CNavTitle,
+  //   name: 'leave',
+  // },
+  {
+    component: CNavItem,
+    name: 'Leave',
+    to: '/leave',
     icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Typography',
-    to: '/theme/typography',
+    to: '/home/theme/typography',
     icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
   },
   {

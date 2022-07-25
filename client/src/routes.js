@@ -53,8 +53,9 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 
 //member Home
 const MemberHome = React.lazy(() => import('./views/member/Home'))
-
-
+const Leave = React.lazy(() => import('./views/member/Leave'))
+const Landing=React.lazy(()=>import('./views/Landing'))
+const Profile=React.lazy(()=>import('./views/member/Profile'))
 
 
 
@@ -62,9 +63,11 @@ const MemberHome = React.lazy(() => import('./views/member/Home'))
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
+  { path: '/landing', name: 'Home', element: Landing },
   { path: '/dashboard', name: 'Dashboard', element: MemberHome },
-  { path: '/theme', name: 'Theme', element: Colors, exact: true },
-  { path: '/theme/colors', name: 'Colors', element: Colors },
+  { path: '/leave', name: 'Leave', element: Leave},
+  { path: '/profile', name: 'Profile', element: Profile},
+  
   { path: '/theme/typography', name: 'Typography', element: Typography },
   { path: '/base', name: 'Base', element: Cards, exact: true },
   { path: '/base/accordion', name: 'Accordion', element: Accordion },

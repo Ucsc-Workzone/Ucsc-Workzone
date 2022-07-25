@@ -11,10 +11,11 @@ import { sygnet } from 'src/assets/brand/sygnet'
 import { CImage } from '@coreui/react'
 import SimpleBar from 'simplebar-react'
 import 'simplebar/dist/simplebar.min.css'
-import Logo from 'src/assets/images/logo.png';
+// import memberNav from '../Navigations/member'
 
 // sidebar nav config
-import navigation from '../_nav'
+import navigation from '../_membernav'
+import navigation2 from '../_nav'
 
 const AppSidebar = () => {
   const dispatch = useDispatch()
@@ -41,9 +42,10 @@ const AppSidebar = () => {
       </CSidebarBrand>
       <CSidebarNav>
         <SimpleBar>
-       {user=true &&  <AppSidebarNav items={navigation} />
+       {/* {user=true &&  <AppSidebarNav items={navigation} />
 
-       }
+       } */}
+       <AppSidebarNav  items={navigation} />
         </SimpleBar>
       </CSidebarNav>
       <CSidebarToggler
